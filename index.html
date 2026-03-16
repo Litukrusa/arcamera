@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Mirror</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas"></canvas>
+    
+    <div class="sidebar-wrapper" id="sidebarWrapper">
+        <button class="gui-toggle" id="guiToggle">
+            <span class="icon">⊞</span>
+        </button>
+        
+        <div class="sidebar" id="sidebar">
+            <div class="categories">
+                <button class="category-btn active" data-category="tshirts">Футболки</button>
+                <button class="category-btn" data-category="tanktop">Безрукавки</button>
+                <button class="category-btn" data-category="hoodie">Худи</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="clothing-preview" id="clothingPreview"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
